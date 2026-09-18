@@ -253,6 +253,7 @@ export const portfolioCategories = [
   "Poster",
   "Packaging",
   "Presentation",
+  "Digital Marketing",
 ] as const;
 
 export type PortfolioCategory = (typeof portfolioCategories)[number];
@@ -893,6 +894,84 @@ export const portfolioItems: PortfolioItem[] = [
     description: "Creative portfolio deck designed to showcase work in a polished format.",
     details: "Presentation • Portfolio",
     image: "/portfolio/presentation-8.jpg",
+  },
+
+  // ─────────────────────────────────────────────
+  // DIGITAL MARKETING — 8 PROJECTS
+  // ─────────────────────────────────────────────
+  {
+    id: "digital-marketing-1",
+    title: "Social Media Ad Campaign",
+    category: "Digital Marketing",
+    description:
+      "High-impact digital ad creatives designed to promote products, services and offers.",
+    details: "Digital Marketing • Social Media Ads",
+    image: "/portfolio/digital-marketing-1.jpg",
+  },
+  {
+    id: "digital-marketing-2",
+    title: "Product Promotion Campaign",
+    category: "Digital Marketing",
+    description:
+      "Eye-catching promotional creatives designed to increase product visibility and engagement.",
+    details: "Digital Marketing • Product Promotion",
+    image: "/portfolio/digital-marketing-2.jpg",
+  },
+  {
+    id: "digital-marketing-3",
+    title: "Brand Awareness Campaign",
+    category: "Digital Marketing",
+    description:
+      "Creative campaign visuals designed to strengthen brand presence across digital platforms.",
+    details: "Digital Marketing • Brand Awareness",
+    image: "/portfolio/digital-marketing-3.jpg",
+    span: "wide",
+  },
+  {
+    id: "digital-marketing-4",
+    title: "Performance Ad Creative",
+    category: "Digital Marketing",
+    description:
+      "Conversion-focused advertising creatives created for digital marketing campaigns.",
+    details: "Digital Marketing • Performance Ads",
+    image: "/portfolio/digital-marketing-4.jpg",
+  },
+  {
+    id: "digital-marketing-5",
+    title: "Festival Marketing Campaign",
+    category: "Digital Marketing",
+    description:
+      "Festive promotional creatives designed to capture attention and communicate special offers.",
+    details: "Digital Marketing • Festival Campaign",
+    image: "/portfolio/digital-marketing-5.jpg",
+  },
+  {
+    id: "digital-marketing-6",
+    title: "Lead Generation Campaign",
+    category: "Digital Marketing",
+    description:
+      "Strategic digital creatives designed to attract potential customers and generate enquiries.",
+    details: "Digital Marketing • Lead Generation",
+    image: "/portfolio/digital-marketing-6.jpg",
+    span: "tall",
+  },
+  {
+    id: "digital-marketing-7",
+    title: "Digital Product Campaign",
+    category: "Digital Marketing",
+    description:
+      "Modern promotional visuals created to showcase products and drive online attention.",
+    details: "Digital Marketing • Product Campaign",
+    image: "/portfolio/digital-marketing-7.jpg",
+  },
+  {
+    id: "digital-marketing-8",
+    title: "Online Brand Campaign",
+    category: "Digital Marketing",
+    description:
+      "A cohesive set of digital creatives built for consistent online brand communication.",
+    details: "Digital Marketing • Online Campaign",
+    image: "/portfolio/digital-marketing-8.jpg",
   },
 ];
 
