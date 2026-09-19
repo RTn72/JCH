@@ -37,8 +37,383 @@ export const primaryNav: NavItem[] = [
   { label: "About", to: "/about" },
   { label: "Services", to: "/services" },
   { label: "Portfolio", to: "/portfolio" },
+  { label: "Pricing", to: "/pricing" },
   { label: "Contact", to: "/contact" },
 ];
+
+export type PricingTier = {
+  name: "Basic" | "Standard" | "Premium";
+  price: number;
+  features: string[];
+  popular?: boolean;
+};
+
+export type ServicePricing = {
+  slug: string;
+  service: string;
+  description: string;
+  tiers: PricingTier[];
+};
+
+export const servicePricing: ServicePricing[] = [
+  {
+    slug: "logo-design",
+    service: "Logo Design",
+    description: "Unique and memorable logos for your brand.",
+    tiers: [
+      { name: "Basic", price: 399, features: ["1 Logo Concept", "JPG + PNG", "1 Revision"] },
+      {
+        name: "Standard",
+        price: 799,
+        features: ["2 Concepts", "High Resolution Files", "3 Revisions"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 1199,
+        features: ["3 Concepts", "Source File (AI/PSD)", "Unlimited Revisions"],
+      },
+    ],
+  },
+  {
+    slug: "thumbnail-design",
+    service: "Thumbnail Design",
+    description: "Attention-grabbing thumbnails for YouTube and Shorts.",
+    tiers: [
+      {
+        name: "Basic",
+        price: 199,
+        features: ["Simple Text + Image", "Standard Resolution", "1 Revision"],
+      },
+      {
+        name: "Standard",
+        price: 499,
+        features: ["Eye-catching Layout", "High Quality Image", "2 Revisions"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 999,
+        features: ["CTR Focus Design", "Professional Typography", "Unlimited Revisions"],
+      },
+    ],
+  },
+  {
+    slug: "poster-design",
+    service: "Poster Design",
+    description: "Attractive posters for promotions, events and social media.",
+    tiers: [
+      { name: "Basic", price: 299, features: ["Simple Design", "Social Media Use", "1 Revision"] },
+      {
+        name: "Standard",
+        price: 699,
+        features: ["Creative Layout", "HD Quality", "3 Revisions"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 1199,
+        features: ["High Impact Design", "Print + Digital Ready", "Unlimited Revisions"],
+      },
+    ],
+  },
+  {
+    slug: "business-card-design",
+    service: "Business Card Design",
+    description: "Clean and professional business cards.",
+    tiers: [
+      { name: "Basic", price: 399, features: ["Single-Side Design", "Print Ready", "1 Revision"] },
+      {
+        name: "Standard",
+        price: 799,
+        features: ["Double-Side Design", "Modern Layout", "3 Revisions"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 1199,
+        features: ["Premium Style", "Mockup Preview", "Unlimited Revisions"],
+      },
+    ],
+  },
+  {
+    slug: "brochure-design",
+    service: "Brochure Design",
+    description: "Informative and visually appealing brochures.",
+    tiers: [
+      {
+        name: "Basic",
+        price: 599,
+        features: ["1 Page / Folding Design", "Simple Layout", "1 Revision"],
+      },
+      {
+        name: "Standard",
+        price: 999,
+        features: ["Professional Layout", "Print Ready", "3 Revisions"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 1199,
+        features: ["Attractive Visual Design", "High Quality Print Files", "Unlimited Revisions"],
+      },
+    ],
+  },
+  {
+    slug: "flyer-design",
+    service: "Flyer Design",
+    description: "Professional flyers for products, services and events.",
+    tiers: [
+      {
+        name: "Basic",
+        price: 299,
+        features: ["Simple Promotional Design", "Web Use", "1 Revision"],
+      },
+      {
+        name: "Standard",
+        price: 699,
+        features: ["Eye-catching Layout", "Print Ready", "3 Revisions"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 1199,
+        features: ["High Quality Design", "Digital + Print Use", "Unlimited Revisions"],
+      },
+    ],
+  },
+  {
+    slug: "social-media-design",
+    service: "Social Media Design",
+    description: "Branded social media creatives for consistent communication.",
+    tiers: [
+      { name: "Basic", price: 199, features: ["Simple Post", "JPG Format", "1 Revision"] },
+      {
+        name: "Standard",
+        price: 499,
+        features: ["Creative Design", "Brand Colors", "3 Revisions"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 999,
+        features: ["Professional Branding", "High Engagement Design", "Unlimited Revisions"],
+      },
+    ],
+  },
+  {
+    slug: "banner-ad-creative",
+    service: "Banner / Ad Creative",
+    description: "Marketing-focused banners and advertising creatives.",
+    tiers: [
+      { name: "Basic", price: 399, features: ["Simple Banner", "Web Use", "1 Revision"] },
+      {
+        name: "Standard",
+        price: 799,
+        features: ["Promotional Design", "HD Quality", "3 Revisions"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 1199,
+        features: ["Marketing Focused", "Multiple Sizes", "Unlimited Revisions"],
+      },
+    ],
+  },
+  {
+    slug: "graphic-design",
+    service: "Graphic Design",
+    description: "Custom visual design solutions for business needs.",
+    tiers: [
+      { name: "Basic", price: 499, features: ["1 Creative Design", "JPG + PNG", "1 Revision"] },
+      {
+        name: "Standard",
+        price: 999,
+        features: ["2 Creative Designs", "HD Files", "3 Revisions"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 1499,
+        features: ["3 Creative Designs", "Source Files", "Unlimited Revisions"],
+      },
+    ],
+  },
+  {
+    slug: "branding",
+    service: "Branding",
+    description: "Complete visual identity solutions for your brand.",
+    tiers: [
+      {
+        name: "Basic",
+        price: 1499,
+        features: ["Logo Design", "Basic Color Palette", "Typography Selection"],
+      },
+      {
+        name: "Standard",
+        price: 2999,
+        features: ["Logo + Brand Colors", "Typography System", "Basic Brand Guidelines"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 4999,
+        features: ["Complete Brand Identity", "Brand Guidelines", "Brand Applications"],
+      },
+    ],
+  },
+  {
+    slug: "website-design",
+    service: "Website Design & Development",
+    description: "Modern responsive websites for your business.",
+    tiers: [
+      {
+        name: "Basic",
+        price: 4999,
+        features: ["Landing Page", "Responsive Design", "Basic Contact Form"],
+      },
+      {
+        name: "Standard",
+        price: 9999,
+        features: ["Up to 5 Pages", "Responsive Design", "Contact / Enquiry Integration"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 19999,
+        features: ["Multi-page Website", "Advanced UI & Animations", "Custom Integrations"],
+      },
+    ],
+  },
+  {
+    slug: "video-editing",
+    service: "Video Editing",
+    description: "Polished video content for social media and promotions.",
+    tiers: [
+      { name: "Basic", price: 499, features: ["Basic Cuts", "Text / Captions", "1 Revision"] },
+      {
+        name: "Standard",
+        price: 999,
+        features: ["Advanced Editing", "Transitions + Effects", "3 Revisions"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 1999,
+        features: ["Professional Edit", "Motion Graphics", "Unlimited Revisions"],
+      },
+    ],
+  },
+  {
+    slug: "packaging-design",
+    service: "Packaging Design",
+    description: "Product packaging designed for strong brand presence.",
+    tiers: [
+      {
+        name: "Basic",
+        price: 999,
+        features: ["1 Packaging Concept", "Print-ready Artwork", "1 Revision"],
+      },
+      {
+        name: "Standard",
+        price: 1999,
+        features: ["2 Concepts", "Mockup Preview", "3 Revisions"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 3999,
+        features: ["3 Concepts", "Complete Packaging System", "Unlimited Revisions"],
+      },
+    ],
+  },
+  {
+    slug: "presentation-design",
+    service: "Presentation / PPT Design",
+    description: "Professional presentations with clear visual storytelling.",
+    tiers: [
+      { name: "Basic", price: 799, features: ["Up to 10 Slides", "Clean Layout", "1 Revision"] },
+      {
+        name: "Standard",
+        price: 1499,
+        features: ["Up to 20 Slides", "Custom Visual Design", "3 Revisions"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 2999,
+        features: ["Up to 30 Slides", "Advanced Visual Storytelling", "Unlimited Revisions"],
+      },
+    ],
+  },
+  {
+    slug: "digital-marketing",
+    service: "Digital Marketing",
+    description: "Creative digital marketing support for online campaigns.",
+    tiers: [
+      {
+        name: "Basic",
+        price: 2999,
+        features: ["Campaign Creative Set", "Basic Content Support", "1 Revision Round"],
+      },
+      {
+        name: "Standard",
+        price: 5999,
+        features: ["Campaign Creative Set", "Content Planning", "3 Revision Rounds"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 9999,
+        features: ["Complete Campaign Creative", "Content Strategy", "Ongoing Optimization"],
+      },
+    ],
+  },
+  {
+    slug: "and-more",
+    service: "And More",
+    description: "Custom creative solutions for specific project requirements.",
+    tiers: [
+      {
+        name: "Basic",
+        price: 499,
+        features: ["Custom Creative Request", "Standard Delivery", "1 Revision"],
+      },
+      {
+        name: "Standard",
+        price: 999,
+        features: ["Custom Creative Solution", "Priority Delivery", "3 Revisions"],
+        popular: true,
+      },
+      {
+        name: "Premium",
+        price: 1999,
+        features: ["Advanced Custom Solution", "Priority Support", "Unlimited Revisions"],
+      },
+    ],
+  },
+];
+
+export const comboPackages = [
+  {
+    slug: "starter",
+    name: "Starter",
+    price: 999,
+    features: ["1 Logo (Basic)", "1 Thumbnail", "1 Social Media Post"],
+  },
+  {
+    slug: "creator",
+    name: "Creator",
+    price: 1499,
+    features: ["1 Thumbnail (Premium)", "2 Social Media Posts", "1 Poster/Flyer"],
+  },
+  {
+    slug: "business",
+    name: "Business",
+    price: 1999,
+    features: ["Logo (Standard)", "Business Card", "2 Social Media Posts"],
+  },
+] as const;
 
 export type Service = {
   slug: string;
