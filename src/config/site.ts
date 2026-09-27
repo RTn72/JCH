@@ -1035,7 +1035,7 @@ export const portfolioItems: PortfolioItem[] = [
     category: "Video",
     description: "Energetic event highlight edit built around memorable moments.",
     details: "Video • Event",
-    image: "/portfolio/video-5.jpg",
+    image: "/portfolio/video-5.mp4",
   },
   {
     id: "video-6",
@@ -1043,7 +1043,7 @@ export const portfolioItems: PortfolioItem[] = [
     category: "Video",
     description: "Product-focused advertisement combining visual storytelling and motion.",
     details: "Video • Advertisement",
-    image: "/portfolio/video-6.jpg",
+    image: "/portfolio/video-6.mp4",
   },
   {
     id: "video-7",
@@ -1052,7 +1052,7 @@ export const portfolioItems: PortfolioItem[] = [
     description:
       "Campaign video designed to maintain consistent brand messaging across social platforms.",
     details: "Video • Social Campaign",
-    image: "/portfolio/video-7.jpg",
+    image: "/portfolio/video-7.mp4",
   },
   {
     id: "video-8",
@@ -1061,7 +1061,7 @@ export const portfolioItems: PortfolioItem[] = [
     description:
       "Professional corporate edit with clean transitions, titles and supporting visuals.",
     details: "Video • Corporate",
-    image: "/portfolio/video-8.jpg",
+    image: "/portfolio/video-8.mp4",
   },
 
   // ─────────────────────────────────────────────
